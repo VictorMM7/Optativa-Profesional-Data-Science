@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráficas en Python</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .content {
+            padding: 20px;
+        }
+        .section-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .section-content {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .images {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .image-container {
+            width: 30%;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .interpretation {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Gráficas de Python</h1>
+    </header>
+    <div class="content">
+        <h2 class="section-title">Gráficas de Python</h2>
+        <div class="images">
+            <div class="image-container">
+                <img src="Imagenes/Grafica de Barras Horizontal_Py.png" alt="Gráfica Python 1">
+                <div class="interpretation">
+                    <h3>Interpretación</h3>
+                    <p>El gráfico identifica los estados con los cargos mensuales más altos, lo que puede ser una indicación de que los clientes en estos estados pagan más por sus servicios. 
+                        Si estos estados coinciden con una alta tasa de churn, podría significar que los precios altos son un factor determinante para la cancelación del servicio. 
+                        Sin embargo, si no coinciden, podría implicar que otros factores, como la calidad del servicio o promociones regionales, son más relevantes.</p>
+                        <li>Conclusión: La empresa debería investigar las razones detrás de los altos cargos en estas regiones y evaluar si hay una correlación con el churn 
+                            para ajustar estrategias de precios o mejorar la percepción del valor del servicio.</li>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="Imagenes/Grafica de Barras_Py.png" alt="Gráfica Python 2">
+                <div class="interpretation">
+                    <h3>Interpretación</h3>
+                    <p>El gráfico muestra que a medida que aumenta el número de llamadas al servicio al cliente, también aumenta la probabilidad de churn. 
+                        Esto sugiere que los clientes que interactúan más con el servicio al cliente probablemente enfrentan problemas que no se resuelven de manera efectiva y satisfactoria. 
+                        La empresa debería analizar las razones más comunes de las llamadas (reclamos, consultas técnicas, facturación) e implementar mejoras en su atención al cliente para reducir el churn.</p>
+                        <li>Conclusión: El servicio al cliente no solo debe resolver problemas, sino también prevenirlos. 
+                            Mejorar la capacitación del personal y la resolución en la primera llamada puede ser clave.</li>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="Imagenes/Grafica de Violin_Py.png" alt="Gráfica Python 3">
+                <div class="interpretation">
+                    <h3>Interpretación</h3>
+                    <p>Este gráfico revela que los clientes que hicieron churn tienden a tener una distribución diferente de cargos mensuales 
+                        en comparación con los que no cancelaron. Si los clientes con churn pagan consistentemente más o menos en promedio, esto podría indicar que el precio es un factor decisivo. 
+                        Por ejemplo, cargos elevados podrían ser percibidos como injustos, mientras que cargos bajos podrían indicar que estos clientes no ven suficiente valor en el servicio.</p>
+                        <li>Conclusión: La empresa debería segmentar a los clientes según sus patrones de gasto e implementar estrategias específicas, como descuentos para los clientes que pagan más o 
+                            programas de fidelización para quienes pagan menos.</li>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
