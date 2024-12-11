@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráficas en Python</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #6086c7;
+        }
+        header {
+            background-color: #0d4b8e;
+            color: rgb(234, 236, 244);
+            text-align: center;
+            padding: 20px;
+        }
+        .content {
+            padding: 20px;
+        }
+        .section-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .section-content {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .images {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .image-container {
+            width: 30%;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .interpretation {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Gráficas de Python</h1>
+    </header>
+    <div class="content">
+        <h2 class="section-title">Gráficas de Python</h2>
+        <div class="images">
+            <div class="image-container">
+                <img src="Imagenes/Grafica de Dispersion_Py.png" alt="Gráfica Python 1">
+                <p>Este gráfico relaciona los cargos mensuales con la duración del contrato, mostrando si los clientes que cancelan tienden a pagar más y si el precio influye en la cancelación. 
+                    Los clientes con contratos de corta duración tienden a tener cargos mensuales más altos y una mayor probabilidad de churn. Por otro lado, los clientes con contratos más largos parecen tener una distribución más uniforme de cargos y menor probabilidad de churn.
+                    </p>
+                <div class="interpretation">
+                    <h3>Interpretación y Solucion</h3>
+                    <p>Esto podría indicar que los clientes con cargos elevados en contratos cortos perciben el servicio como caro o que no reciben suficiente valor en relación con lo que pagan. Los contratos más largos podrían estar atados a descuentos o beneficios que mejoran la retención.
+                        Se recomienda dar descuentos en contratos de corto plazo para reducir el churn en este segmento. Y promocionar los beneficios de los contratos a largo plazo, como precios más bajos o servicios adicionales.
+                        </p>
+                        <img src="Imagenes/Codigo Grafica de Dispersion_Py.png" alt="Gráfica Python 1">
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="Imagenes/Grafica de Barras_Py.png" alt="Gráfica Python 2">
+                <p>Este gráfico muestra qué tipos de planes tienen una mayor proporción de churn, ayudando a identificar posibles problemas en la oferta de servicios.
+                    Los clientes con un "Plan Internacional" muestran una tasa de churn notablemente más alta en comparación con los que no tienen este plan. 
+                    Sugiriendo que los clientes de este segmento podrían estar insatisfechos con el precio, las condiciones del plan o no ven suficiente valor en mantenerlo.</p>
+                <div class="interpretation">
+                    <h3>Interpretación y Solucion</h3>
+                    <p>Este resultado indica que los "Planes Internacionales" podrían necesitar una revisión por lo tanto se debería de:</p>
+                    <li>•	Evaluar si el precio de estos planes es competitivo.</li>
+                    <li>•	Mejorar la comunicación del valor que ofrece el plan a los clientes.</li>
+                    <li>•	Ofrecer promociones o descuentos para este segmento de clientes específicos.</li>
+                    <img src="Imagenes/Codigo Grafica de Barras_Py.png" alt="Gráfica Python 2">
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="Imagenes/Grafica de Violin_Py.png" alt="Gráfica Python 3">
+                <p>Este gráfico compara el número de llamadas al servicio al cliente entre clientes que cancelaron y los que no, ayudando a identificar si existe una relación entre insatisfacción y churn.
+                    Los clientes que hicieron churn tienen un número de llamadas significativamente mayor al servicio al cliente en comparación con los que no cancelaron. Esto sugiere que la insatisfacción o problemas no resueltos están contribuyendo directamente al churn.
+                    </p>
+                <div class="interpretation">
+                    <h3>Interpretación y Solucion</h3>
+                    <p>Los problemas frecuentes o la incapacidad del servicio al cliente para resolver problemas en la primera llamada pueden ser un factor crítico en la decisión de cancelar, un alto número de interacciones con el soporte puede ser un indicador de frustración o de servicios que no cumplen con las expectativas.
+                        La recomendación que se sugiere es mejorar el servicio al cliente enfocándose en la resolución en la primera llamada (First Call Resolution) y analizar las razones más comunes de las llamadas y abordar los problemas recurrentes.
+                        </p>
+                        <img src="Imagenes/Codigo Grafica de Violin.png" alt="Gráfica Python 3">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráficas en R</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #6086c7;
+        }
+        header {
+            background-color: #0d4b8e;
+            color: rgb(234, 236, 244);
+            text-align: center;
+            padding: 20px;
+        }
+        .content {
+            padding: 20px;
+        }
+        .section-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .section-content {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .images {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .image-container {
+            width: 30%;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .interpretation {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gráficas de R</h1>
+    </header>
+    <div class="content">
+        <h2 class="section-title">Gráficas de R</h2>
+        <div class="images">
+            <div class="image-container">
+                <img src="Imagenes/Grafica de Caja_R.png" alt="Gráfica R 1">
+                <p>Proporciona una visión detallada de cómo los patrones de uso (cargos nocturnos) varían entre los que cancelaron y los que no. 
+                    Permitiendo ajustar estrategias de precios o beneficios para planes específicos.</p>
+                <div class="interpretation">
+                    <h3>Interpretación y Solucion</h3>
+                    <p>Este gráfico permite comparar cómo los cargos nocturnos están distribuidos entre los clientes que cancelaron y los que no, si los clientes que hicieron churn tienen una mayor dispersión (valores extremos), 
+                        esto podría indicar que el uso nocturno inconsistente está asociado a una mayor probabilidad de cancelación. Tal vez estos clientes no están viendo suficiente valor en los servicios nocturnos. 
+                        Con esta informacion haríamos una revisión de los planes nocturnos y analizaríamos si los cargos nocturnos son percibidos como costosos o si los clientes entienden mal los beneficios del plan y de esta manera rediseñaríamos los planes nocturnos para ser más atractivos, 
+                        con tarifas más simples o incentivos por uso, con esto daríamos promociones o recordatorios específicos a los clientes que usan el servicio nocturno de forma inconsistente, destacando el ahorro potencial o el valor agregado y enseñaríamos a los clientes sobre cómo aprovechar mejor los servicios nocturnos.
+                        </p>
+                        <img src="Imagenes/Codigo Grafica de Caja_R.png" alt="Gráfica R 1">
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="Imagenes/Grafica de Linea_R.png" alt="Gráfica R 2">
+                <p>Muestra cómo el churn se distribuye a lo largo del tiempo, destacando la importancia de estrategias tempranas de retención para clientes nuevos. Ayuda a enfocar campañas de fidelización para clientes que estén en riesgo después de un periodo específico.</p>
+                <div class="interpretation">
+                    <h3>Interpretación y Solucion</h3>
+                    <p>Este gráfico muestra la distribución del churn a lo largo del tiempo. Si el churn tiene un pico en los primeros meses, esto indicaría que los clientes nuevos son más propensos a cancelar porque no ven valor en el servicio inicial. Esto sugiere que la empresa necesita programas de bienvenida o 
+                        incentivos para aumentar la retención temprana. Si el churn aumenta después de un periodo largo, podría ser señal de insatisfacción acumulada, por lo que habría que explorar estrategias de fidelización en etapas posteriores.
+                        Dicho lo anterior implemenatariamos estrategias de bienvenida creando programas de incorporación ("onboarding") para los primeros meses de los clientes, destacando los beneficios y soporte del servicio y ofreceríamos descuentos o beneficios iniciales para fidelizar a los nuevos clientes.
+                        </p>
+                        <img src="Imagenes/Codigo Grafica de Linea_R.png" alt="Gráfica R 2">
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="Imagenes/Mapa de Calor_R.png" alt="Gráfica R 3">
+                <p>El mapa de calor visualiza las correlaciones entre las variables principales del dataset para identificar factores relacionados con el churn. En este caso, vamos a incluir variables como cargos mensuales, minutos totales, duración del contrato (tenure), 
+                    y el número de llamadas al servicio al cliente.</p>
+                <div class="interpretation">
+                    <h3>Interpretación y Solucion</h3>
+                    <p>El mapa de calor puede mostrar fuertes correlaciones positivas entre cargos totales y minutos totales, lo cual es esperable porque los cargos se calculan en función del uso. Si variables como llamadas al servicio al cliente tienen correlaciones significativas con el churn, 
+                        esto refuerza la idea de que problemas no resueltos contribuyen a la cancelación. También puede revelar si los clientes con contratos más largos (tenure) tienen una menor probabilidad de churn, lo cual es clave para enfocar estrategias de retención en los primeros meses.
+                        Optimizaríamos el servicio al cliente implementando estrategias para resolver problemas en la primera llamada y reducir la frustración del cliente. Y analizaríamos los motivos más comunes de las llamadas para abordar problemas recurrentes (por ejemplo, facturación, cobertura, soporte técnico).
+                        Y en cuestión a la segementacion basada en el uso identificaríamos a los clientes con altos cargos y alta propensión al churn (según correlaciones) y así diseñaríamos ofertas personalizadas que destaquen el valor del servicio y justifiquen el costo.
+                        </p>
+                        <img src="Imagenes/Codigo Mapa de Calor_R.png" alt="Gráfica R 3">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
